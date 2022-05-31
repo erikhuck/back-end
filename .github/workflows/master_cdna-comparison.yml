@@ -57,8 +57,9 @@ jobs:
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
+        env:
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
         with:
           app-name: 'cdna-comparison'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C07DC11F640F40169918D5E160B15E18 }}
-          SECRET_KEY: ${{ secrets.SECRET_KEY }}
