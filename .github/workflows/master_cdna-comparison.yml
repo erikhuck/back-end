@@ -58,7 +58,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         env:
-          SECRET_KEY: ${{ secrets.SECRET_KEY }}
+          SECRET_KEY: 'secret-key-test'
         with:
           app-name: 'cdna-comparison'
           slot-name: 'Production'
