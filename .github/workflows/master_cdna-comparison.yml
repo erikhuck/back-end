@@ -61,3 +61,4 @@ jobs:
           app-name: 'cdna-comparison'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C07DC11F640F40169918D5E160B15E18 }}
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
