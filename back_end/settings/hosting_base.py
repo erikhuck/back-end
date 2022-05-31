@@ -6,7 +6,9 @@ DEBUG = False
 
 # TODO: Remove
 print('ENVIRONMENT SO FAR:')
-print(os.environ)
+for k, v in os.environ.items():
+    print(f'{k}: {v}')
+
 print()
 print('SECRET KEY:')
 print(os.environ['SECRET_KEY'])
