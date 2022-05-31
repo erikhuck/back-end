@@ -3,16 +3,6 @@ import os
 from back_end.settings.base import *
 
 DEBUG = False
-
-# TODO: Remove
-print('ENVIRONMENT SO FAR:')
-for k, v in os.environ.items():
-    print(f'{k}: {v}')
-
-print()
-print('SECRET KEY:')
-print(os.environ['SECRET_KEY'])
-
 SECRET_KEY = os.environ['SECRET_KEY']
 WSGI_APPLICATION = 'back_end.wsgi.application'
 CORS_ORIGIN_ALLOW_ALL = False
